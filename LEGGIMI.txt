@@ -1,0 +1,23 @@
+COSA C'È QUI DENTRO
+- 8 nuove pagine di guide, dentro la cartella "fixes/"
+- index.html AGGIORNATO (sostituisce quello che hai già su GitHub — ora elenca tutte e 11 le guide)
+- sitemap.xml AGGIORNATO (sostituisce quello che hai già su GitHub)
+
+COME CARICARLO SU GITHUB
+1. Vai sul tuo repository GitHub.
+2. Entra nella cartella "fixes" (cliccandoci sopra nell'elenco dei file).
+3. Clicca "Add file" > "Upload files" e trascina dentro gli 8 nuovi file .html
+   che trovi qui nella cartella fixes/. Poi "Commit changes".
+4. Torna alla radice del repository (fuori dalla cartella fixes).
+5. Clicca sul file "index.html" esistente, poi sull'icona della matita (Edit) in alto a destra.
+6. Cancella tutto il contenuto e incolla il contenuto del nuovo index.html che trovi qui.
+   Poi "Commit changes".
+7. Ripeti lo stesso identico procedimento per "sitemap.xml".
+
+Vercel ripubblica il sito automaticamente pochi secondi dopo ogni commit.
+
+RICORDA
+Se avevi già sostituito "example.com" con il tuo indirizzo vero nei file esistenti,
+il nuovo sitemap.xml qui contiene ancora "example.com" nei link — dovrai
+rifare quella sostituzione anche qui prima di caricarlo (oppure aspetta che
+te lo ricordi Claude nella prossima risposta).
