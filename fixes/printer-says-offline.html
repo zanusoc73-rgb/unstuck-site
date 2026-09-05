@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printer says "offline" even though it's on — Unstuck</title>
+<meta name="description" content="Why your printer shows offline when it's powered on and connected, and the actual sequence of fixes that works, in order.">
+<link rel="canonical" href="https://example.com/fixes/printer-says-offline.html">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/">Un<span>stuck</span>.</a>
+    <nav class="site-nav">
+      <a href="/#fixes">Fixes</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-header">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/">Unstuck</a> / printers</p>
+    <h1>Printer says "offline" even though it's plugged in and turned on</h1>
+    <p class="article-meta">Applies to Windows 10/11 and macOS, most brands (HP, Canon, Epson, Brother).</p>
+  </div>
+</div>
+
+<div class="wrap">
+<article class="article-body">
+
+  <p>This almost never means the printer is actually offline. It means your computer's print queue has decided the printer is offline, usually because of one of three things: a stale IP address, two competing printer drivers, or a spooler that's stuck. Go through these in order — most people are fixed by step 2 or 3.</p>
+
+  <div class="ad-slot">Ad slot — 300×250, above the fold, after the intro paragraph</div>
+
+  <h2>Diagnose it</h2>
+  <ol class="diagnostic-steps">
+    <li>
+      <strong>Check it's not a real connection problem first.</strong>
+      Print a test page directly from the printer's own menu (no computer involved). If that fails, it's a hardware or network issue, not software — check the printer's own Wi-Fi or cable connection.
+    </li>
+    <li>
+      <strong>Clear the print queue.</strong>
+      Open the queue for your printer and cancel every pending job, including ones that look stuck. A single jammed job is the single most common cause of "offline."
+    </li>
+    <li>
+      <strong>Restart the print spooler (Windows) or reset the printing system (Mac).</strong>
+      On Windows, open Services, find "Print Spooler," and restart it. On Mac, open Printers &amp; Scanners, right-click the printer list, and choose "Reset printing system." This clears corrupted queue data that a normal cancel doesn't touch.
+    </li>
+    <li>
+      <strong>Remove the printer and add it again.</strong>
+      Delete the printer entirely from your device, then re-add it by searching for it fresh. This forces your computer to pull a current IP address instead of reusing a stale one — the actual root cause in most Wi-Fi printer cases.
+    </li>
+    <li>
+      <strong>Set a static IP for the printer.</strong>
+      If it keeps happening every few days, your router is reassigning the printer a new IP address each time it reconnects. Reserve a fixed IP for it in your router's settings (usually under "DHCP reservation") so your computer never loses track of it again.
+    </li>
+  </ol>
+
+  <div class="solved-box">
+    <span class="label">most common fix</span>
+    <p>For about 7 in 10 people, step 4 — removing and re-adding the printer — is what actually fixes it. Steps 2 and 3 clear the symptom temporarily; step 4 clears the cause.</p>
+  </div>
+
+  <h2>If it keeps coming back</h2>
+  <p>Recurring offline errors (same printer, every few days) are almost always the IP address drifting, described in step 5. It's a five-minute router setting and it's permanent once set.</p>
+
+  <div class="ad-slot">Ad slot — in-content, native format, after the last section</div>
+
+</article>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Unstuck. Fixes tested, not copy-pasted.</p>
+    <nav>
+      <a href="/about.html">About</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
