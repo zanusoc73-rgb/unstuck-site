@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wi-Fi shows "connected" but nothing loads — Unstuck</title>
+<meta name="description" content="Your device says you're connected to Wi-Fi but no page will load. Here's the actual cause and the fix order that works.">
+<link rel="canonical" href="https://example.com/fixes/wifi-connected-no-internet.html">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Un<span>stuck</span>.</a>
+    <nav class="site-nav">
+      <a href="../index.html#fixes">Fixes</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-header">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="../index.html">Unstuck</a> / networking</p>
+    <h1>Wi-Fi shows "connected," but no page will load</h1>
+    <p class="article-meta">Applies to phones, laptops, and smart TVs on any router brand.</p>
+  </div>
+</div>
+
+<div class="wrap">
+<article class="article-body">
+
+  <p>"Connected" only means your device has a link to the router — it says nothing about whether the router itself has a working connection to the internet. That distinction is the whole problem, and it's why restarting your phone usually does nothing.</p>
+
+  <div class="ad-slot">Ad slot — 300×250, above the fold, after the intro paragraph</div>
+
+  <h2>Work through it in this order</h2>
+  <ol class="diagnostic-steps">
+    <li>
+      <strong>Check if it's just your device.</strong>
+      Try another phone or laptop on the same Wi-Fi. If it also can't load anything, the problem is the router or the connection coming into your home, not your device — skip to step 3.
+    </li>
+    <li>
+      <strong>Forget the network and rejoin it.</strong>
+      If only your device is affected, remove the saved Wi-Fi network from its settings and reconnect from scratch, typing the password again. This clears a corrupted network profile, a common cause on phones after an OS update.
+    </li>
+    <li>
+      <strong>Power-cycle the modem and router — properly.</strong>
+      Unplug both from power (not just their apps or a soft restart). Wait a full 30 seconds. Plug the modem in first, wait until its lights settle, then plug in the router. Most "no internet" cases are the modem holding an expired connection lease that only clears on real power loss.
+    </li>
+    <li>
+      <strong>Check for a DNS problem specifically.</strong>
+      If pages won't load but your internet provider's status app or a ping tool shows an active connection, it's likely DNS. Try switching your device's DNS to <code>1.1.1.1</code> (Cloudflare) or <code>8.8.8.8</code> (Google) instead of your ISP's default.
+    </li>
+    <li>
+      <strong>Call your provider and ask for a line status check.</strong>
+      If steps 1–4 don't fix it, the fault is often upstream — a local outage or a degraded line — and only your provider can see that from their side.
+    </li>
+  </ol>
+
+  <div class="solved-box">
+    <span class="label">most common fix</span>
+    <p>A proper power-cycle in step 3 — full unplug, 30-second wait, modem before router — resolves this more often than any setting you can change on your phone or laptop.</p>
+  </div>
+
+  <div class="ad-slot">Ad slot — in-content, native format, after the last section</div>
+
+</article>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Unstuck. Fixes tested, not copy-pasted.</p>
+    <nav>
+      <a href="../about.html">About</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
