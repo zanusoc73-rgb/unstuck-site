@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unstuck — Fixes for the tech problems Google won't answer</title>
+<meta name="description" content="Clear, tested fixes for the annoying everyday tech problems that never seem to have a straight answer online.">
+<link rel="canonical" href="https://example.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Un<span>stuck</span>.</a>
+    <nav class="site-nav">
+      <a href="index.html#fixes">Fixes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>The fix that wasn't on the first ten pages of Google.</h1>
+    <p>Every guide here exists because a real search turned up nothing but ads, forum threads from 2014, and "try restarting it." We test the fix before we write it down.</p>
+    <form class="search-box" role="search" action="/" method="get" onsubmit="return false;">
+      <input type="search" id="fixSearch" placeholder="printer says offline, wifi no internet, zoom won't share sound…" aria-label="Search for a fix">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</section>
+
+<section class="index-section" id="fixes">
+  <div class="wrap">
+    <h2>Latest fixes</h2>
+    <p class="index-count" id="fixCount">3 guides, growing every week</p>
+    <ul class="fix-list" id="fixList">
+      <li>
+        <a href="fixes/printer-says-offline.html">
+          <span>
+            <span class="fix-title">Printer says "offline" even though it's on</span>
+            <span class="fix-tag">printers · windows · mac</span>
+          </span>
+          <span class="fix-arrow">solve →</span>
+        </a>
+      </li>
+      <li>
+        <a href="fixes/wifi-connected-no-internet.html">
+          <span>
+            <span class="fix-title">Wi-Fi shows "connected" but nothing loads</span>
+            <span class="fix-tag">wifi · networking · router</span>
+          </span>
+          <span class="fix-arrow">solve →</span>
+        </a>
+      </li>
+      <li>
+        <a href="fixes/zoom-share-sound-not-working.html">
+          <span>
+            <span class="fix-title">Screen share works but the audio doesn't</span>
+            <span class="fix-tag">zoom · teams · google meet</span>
+          </span>
+          <span class="fix-arrow">solve →</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Unstuck. Fixes tested, not copy-pasted.</p>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('fixSearch').addEventListener('keyup', function (e) {
+    var q = e.target.value.toLowerCase();
+    document.querySelectorAll('#fixList li').forEach(function (li) {
+      var text = li.textContent.toLowerCase();
+      li.style.display = text.indexOf(q) !== -1 ? '' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
