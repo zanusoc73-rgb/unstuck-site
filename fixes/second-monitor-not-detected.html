@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Second monitor isn't detected — Unstuck</title>
+<meta name="description" content="You've connected two monitors but the computer only sees one. Here's the real cause and the fix order that works.">
+<link rel="canonical" href="https://example.com/fixes/second-monitor-not-detected.html">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Un<span>stuck</span>.</a>
+    <nav class="site-nav">
+      <a href="../index.html#fixes">Fixes</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-header">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="../index.html">Unstuck</a> / displays</p>
+    <h1>Two monitors are connected, but only one is detected</h1>
+    <p class="article-meta">Applies to Windows and macOS laptops and desktops, HDMI, DisplayPort, and USB-C.</p>
+  </div>
+</div>
+
+<div class="wrap">
+<article class="article-body">
+
+  <p>This is almost never a broken monitor. It's usually one of: a graphics card port that's disabled by default, a cable running through a port that doesn't carry a video signal, or the display simply asleep and not sending a signal for the computer to detect.</p>
+
+  <div class="ad-slot">Ad slot — 300×250, above the fold, after the intro paragraph</div>
+
+  <h2>Work through it in this order</h2>
+  <ol class="diagnostic-steps">
+    <li>
+      <strong>Wake the second monitor manually.</strong>
+      Press a button on the monitor itself or move its input source setting — many monitors go to sleep and stop signaling "I'm here" to the computer, which makes the OS think nothing is plugged in at all.
+    </li>
+    <li>
+      <strong>Confirm the cable and port both actually carry video.</strong>
+      Not every USB-C port supports video output ("DisplayPort over USB-C" is a specific feature, not universal), and some docking station ports are power/data only. Check your laptop or dock's documentation for which exact port supports external displays.
+    </li>
+    <li>
+      <strong>Force detection from display settings.</strong>
+      On Windows, open Display Settings and click "Detect" under Multiple Displays. On Mac, hold Option and click "Detect Displays" in the Displays menu (found in System Settings, or hold Option while clicking the display icon in the menu bar).
+    </li>
+    <li>
+      <strong>Update or reinstall the graphics driver.</strong>
+      An outdated graphics driver is a common cause of a second display being ignored entirely, especially after a Windows update. Update through Device Manager, or download the latest driver directly from your graphics card manufacturer (Intel, NVIDIA, or AMD).
+    </li>
+    <li>
+      <strong>Test the monitor and cable on a different computer.</strong>
+      This immediately isolates whether the fault is your monitor/cable or your computer's graphics output — if it works fine elsewhere, the problem is specific to your machine's port or driver.
+    </li>
+  </ol>
+
+  <div class="solved-box">
+    <span class="label">most common fix</span>
+    <p>Forcing detection through the display settings (step 3) fixes this more often than a driver reinstall — the OS frequently just needs to be told to look again after a monitor was plugged in while the computer was already on.</p>
+  </div>
+
+  <div class="ad-slot">Ad slot — in-content, native format, after the last section</div>
+
+</article>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Unstuck. Fixes tested, not copy-pasted.</p>
+    <nav>
+      <a href="../about.html">About</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

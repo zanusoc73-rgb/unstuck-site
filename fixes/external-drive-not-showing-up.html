@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>External hard drive isn't showing up on the computer — Unstuck</title>
+<meta name="description" content="You plug in an external drive and it doesn't appear anywhere, even though it spins up. Here's the real cause and fix order.">
+<link rel="canonical" href="https://example.com/fixes/external-drive-not-showing-up.html">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Un<span>stuck</span>.</a>
+    <nav class="site-nav">
+      <a href="../index.html#fixes">Fixes</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-header">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="../index.html">Unstuck</a> / storage</p>
+    <h1>An external hard drive won't show up, even though it spins up</h1>
+    <p class="article-meta">Applies to Windows and macOS, USB and USB-C external drives.</p>
+  </div>
+</div>
+
+<div class="wrap">
+<article class="article-body">
+
+  <p>If the drive spins up (you can hear or feel it) but doesn't appear in File Explorer or Finder, the physical connection is working but the computer isn't recognizing the drive's file system — a data problem, not a power problem. That distinction changes which fix actually applies.</p>
+
+  <div class="ad-slot">Ad slot — 300×250, above the fold, after the intro paragraph</div>
+
+  <h2>Work through it in this order</h2>
+  <ol class="diagnostic-steps">
+    <li>
+      <strong>Check Disk Management (Windows) or Disk Utility (Mac) before anything else.</strong>
+      These tools show drives at a lower level than File Explorer or Finder. If the drive appears there but greyed out or "Unallocated," the drive is detected but not mounted — a very different (and more fixable) situation than the drive not appearing at all.
+    </li>
+    <li>
+      <strong>Try a different USB port and a different cable.</strong>
+      Ports on the back of a desktop or on a hub often supply less power than a drive needs to spin up and communicate reliably. Plug directly into a port on the computer itself, not a hub or dock, and swap the cable if you have a spare.
+    </li>
+    <li>
+      <strong>Assign a drive letter manually (Windows).</strong>
+      In Disk Management, right-click the drive and choose "Change Drive Letter and Paths." Sometimes a drive mounts successfully but without a letter assigned, so it simply never appears in File Explorer.
+    </li>
+    <li>
+      <strong>Test the drive on a second computer.</strong>
+      This is the fastest way to tell whether the problem is the drive itself or your specific computer's ports/drivers. If it doesn't show up anywhere on a second machine either, the drive itself has likely failed.
+    </li>
+    <li>
+      <strong>If the drive shows as "Unallocated" or asks to be formatted, stop before clicking format.</strong>
+      This usually means file system corruption, not necessarily lost data. Formatting will erase everything permanently. If the data matters, use read-only recovery software (or a data recovery service) before formatting anything.
+    </li>
+  </ol>
+
+  <div class="solved-box">
+    <span class="label">most common fix</span>
+    <p>Plugging directly into a rear or built-in USB port instead of a hub or the front panel of a desktop (step 2) resolves the majority of "spins up but invisible" cases — external drives are more power-sensitive than most peripherals.</p>
+  </div>
+
+  <div class="ad-slot">Ad slot — in-content, native format, after the last section</div>
+
+</article>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Unstuck. Fixes tested, not copy-pasted.</p>
+    <nav>
+      <a href="../about.html">About</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

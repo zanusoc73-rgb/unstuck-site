@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bluetooth headphones say "connected" but no sound plays — Unstuck</title>
+<meta name="description" content="Your headphones show as connected in Bluetooth settings but no audio comes through. Here's why, and the fix order that works.">
+<link rel="canonical" href="https://example.com/fixes/bluetooth-connected-no-sound.html">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Un<span>stuck</span>.</a>
+    <nav class="site-nav">
+      <a href="../index.html#fixes">Fixes</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-header">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="../index.html">Unstuck</a> / audio</p>
+    <h1>Bluetooth headphones show "connected," but no sound comes through</h1>
+    <p class="article-meta">Applies to Windows, macOS, iPhone, and Android, any headphone brand.</p>
+  </div>
+</div>
+
+<div class="wrap">
+<article class="article-body">
+
+  <p>"Connected" only confirms the Bluetooth radio link, not that your device is actually sending audio to that link. Most of the time, your phone or computer is still routed to its own speakers, or to a different Bluetooth device entirely, while showing your headphones as connected in the background.</p>
+
+  <div class="ad-slot">Ad slot — 300×250, above the fold, after the intro paragraph</div>
+
+  <h2>Work through it in this order</h2>
+  <ol class="diagnostic-steps">
+    <li>
+      <strong>Check the actual audio output device, not just the Bluetooth list.</strong>
+      On a computer, open the sound settings (not Bluetooth settings) and confirm your headphones are selected as the output device — being "connected" in the Bluetooth menu doesn't set them as the active speaker. On a phone, swipe down to the volume/media control and check which device is listed there.
+    </li>
+    <li>
+      <strong>Disconnect and reconnect from the Bluetooth menu.</strong>
+      Turn Bluetooth off and back on, or forget and re-pair the headphones. This forces the audio profile to re-negotiate, which fixes cases where the connection linked but the audio channel didn't.
+    </li>
+    <li>
+      <strong>Check for a second device stealing the connection.</strong>
+      Many headphones only play audio to one connected device at a time even if paired with several. If your headphones are also paired with a laptop, tablet, or another phone nearby, they may be silently connected there instead — turn off Bluetooth on other nearby devices and test again.
+    </li>
+    <li>
+      <strong>Charge the headphones fully before testing further.</strong>
+      Some headphones stay "connected" on very low battery but mute audio output as a power-saving step, without showing any low-battery warning. Charge for at least 15 minutes and retest.
+    </li>
+    <li>
+      <strong>Forget the device completely and re-pair from scratch.</strong>
+      Remove the headphones from your Bluetooth device list entirely (not just disconnect), restart both the headphones and your phone/computer, then pair as if for the first time. This clears a corrupted pairing profile, which is the usual cause when steps 1–4 don't help.
+    </li>
+  </ol>
+
+  <div class="solved-box">
+    <span class="label">most common fix</span>
+    <p>Step 1 catches the majority of cases — the headphones were connected the whole time, but the computer or phone was still playing audio through its built-in speakers instead.</p>
+  </div>
+
+  <div class="ad-slot">Ad slot — in-content, native format, after the last section</div>
+
+</article>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Unstuck. Fixes tested, not copy-pasted.</p>
+    <nav>
+      <a href="../about.html">About</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

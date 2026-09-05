@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Calendar invites aren't reaching guests — Unstuck</title>
+<meta name="description" content="You add guests to a Google Calendar event and they never receive an invite email. Here's why, and the fix.">
+<link rel="canonical" href="https://example.com/fixes/calendar-invites-not-sending.html">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Un<span>stuck</span>.</a>
+    <nav class="site-nav">
+      <a href="../index.html#fixes">Fixes</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-header">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="../index.html">Unstuck</a> / calendar</p>
+    <h1>Google Calendar guests aren't receiving their invite email</h1>
+    <p class="article-meta">Applies to personal Gmail accounts and Google Workspace accounts.</p>
+  </div>
+</div>
+
+<div class="wrap">
+<article class="article-body">
+
+  <p>Google Calendar sends invite emails through a separate system from the event itself, and it fails silently in several common situations — the event exists on your calendar and looks completely normal, while the guest never gets anything.</p>
+
+  <div class="ad-slot">Ad slot — 300×250, above the fold, after the intro paragraph</div>
+
+  <h2>Work through it in this order</h2>
+  <ol class="diagnostic-steps">
+    <li>
+      <strong>Confirm you actually saved and sent the update.</strong>
+      Adding a guest to an existing event only queues an email — you must click "Save" and then confirm "Send" on the popup that asks whether to notify guests. If you clicked "Don't send," no email goes out at all, even though the guest now shows on the event.
+    </li>
+    <li>
+      <strong>Ask the guest to check spam and promotions folders.</strong>
+      Calendar invites are automated bulk-style emails and get filtered aggressively, especially by Outlook and Yahoo Mail, and by Gmail's own Promotions tab.
+    </li>
+    <li>
+      <strong>Check whether the event was created from a shared calendar you don't own.</strong>
+      If you're not the event's original organizer, some invite emails only send from the actual owner's account, even if you have edit permissions. Check who's listed as the organizer in the event details.
+    </li>
+    <li>
+      <strong>Verify the guest's email address has no typo, including domain.</strong>
+      A single wrong character sends the invite into the void with no bounce notification visible to you, since Calendar doesn't always surface delivery failures the way regular email does.
+    </li>
+    <li>
+      <strong>If it's a recurring event, remove and re-add the guest instead of editing.</strong>
+      Guest notification bugs are more common on recurring events than single ones. Removing the guest entirely, saving, then re-adding them as a fresh change often resolves it when a plain edit doesn't.
+    </li>
+  </ol>
+
+  <div class="solved-box">
+    <span class="label">most common fix</span>
+    <p>Not confirming "Send" on the notification popup (step 1) is the overwhelming majority cause — Calendar makes it easy to miss that a second confirmation is required after adding a guest.</p>
+  </div>
+
+  <div class="ad-slot">Ad slot — in-content, native format, after the last section</div>
+
+</article>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Unstuck. Fixes tested, not copy-pasted.</p>
+    <nav>
+      <a href="../about.html">About</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

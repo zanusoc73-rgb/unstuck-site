@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laptop charging light is on but battery isn't charging — Unstuck</title>
+<meta name="description" content="The charging light is on and the cable is plugged in, but the battery percentage isn't moving. Here's the real cause and the fix order.">
+<link rel="canonical" href="https://example.com/fixes/laptop-charging-light-not-charging.html">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">Un<span>stuck</span>.</a>
+    <nav class="site-nav">
+      <a href="../index.html#fixes">Fixes</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-header">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="../index.html">Unstuck</a> / laptops</p>
+    <h1>The charging light is on, but the battery percentage isn't going up</h1>
+    <p class="article-meta">Applies to Windows laptops and MacBooks, any brand.</p>
+  </div>
+</div>
+
+<div class="wrap">
+<article class="article-body">
+
+  <p>The charging light only confirms that power is reaching the port — it doesn't confirm the battery is accepting that power. This gap almost always comes down to one of three things: a worn cable/port, a battery driver stuck in a bad state, or the laptop drawing more power under load than the charger can supply.</p>
+
+  <div class="ad-slot">Ad slot — 300×250, above the fold, after the intro paragraph</div>
+
+  <h2>Work through it in this order</h2>
+  <ol class="diagnostic-steps">
+    <li>
+      <strong>Test with the laptop fully powered off.</strong>
+      Shut the laptop down completely (not sleep) and leave it charging for 15 minutes. If the percentage rises with it off but not while in use, your charger simply isn't strong enough to keep up with what the laptop is drawing while running — this isn't a fault, just a mismatched or underpowered charger/cable.
+    </li>
+    <li>
+      <strong>Try a different cable and a different wall outlet.</strong>
+      USB-C charging cables wear out at the bend near the connector well before they look damaged. Swap the cable if possible, and try a different outlet to rule out a dead socket or power strip.
+    </li>
+    <li>
+      <strong>Check for a battery driver stuck in Windows Device Manager.</strong>
+      Open Device Manager, expand "Batteries," right-click each entry (usually "Microsoft ACPI-Compliant Control Method Battery") and choose "Uninstall device" for both. Restart the laptop — Windows reinstalls the driver fresh on boot, which clears a stuck charging-state reading.
+    </li>
+    <li>
+      <strong>On a Mac, reset the SMC (System Management Controller).</strong>
+      The SMC controls power management including charging behavior. On Apple Silicon Macs, shut down, then hold the power button for 10 seconds. On older Intel Macs, the reset combination varies by model — search your exact model name plus "SMC reset" for the precise key combination.
+    </li>
+    <li>
+      <strong>Check the port itself for lint or bent pins.</strong>
+      USB-C and MagSafe ports collect pocket lint that blocks a full connection while still lighting the charging LED. Inspect with a flashlight and clear gently with a wooden toothpick, never metal.
+    </li>
+  </ol>
+
+  <div class="solved-box">
+    <span class="label">most common fix</span>
+    <p>Step 1 explains the majority of reports: the laptop was under heavy use (video calls, gaming, many browser tabs) drawing more power than the charger delivers, so the battery drains slowly even while "charging." It isn't broken — it's just losing the race.</p>
+  </div>
+
+  <div class="ad-slot">Ad slot — in-content, native format, after the last section</div>
+
+</article>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Unstuck. Fixes tested, not copy-pasted.</p>
+    <nav>
+      <a href="../about.html">About</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
